@@ -1,0 +1,43 @@
+AWS CLI Commands
+================
+
+# Configure AWS CLI
+aws configure
+
+# Verify AWS Account
+aws sts get-caller-identity
+
+# List AWS Regions
+aws ec2 describe-regions
+
+# EC2
+aws ec2 describe-instances
+aws ec2 start-instances --instance-ids <instance-id>
+aws ec2 stop-instances --instance-ids <instance-id>
+aws ec2 reboot-instances --instance-ids <instance-id>
+aws ec2 terminate-instances --instance-ids <instance-id>
+
+# VPC
+aws ec2 describe-vpcs
+aws ec2 describe-subnets
+aws ec2 describe-route-tables
+aws ec2 describe-internet-gateways
+aws ec2 describe-security-groups
+
+# IAM
+aws iam list-users
+aws iam list-roles
+aws iam list-policies
+
+# S3
+aws s3 ls
+aws s3 mb s3://my-terraform-state
+aws s3 cp terraform.tfstate s3://my-terraform-state/
+aws s3 sync ./website s3://my-bucket
+
+# DynamoDB
+aws dynamodb list-tables
+
+# CloudWatch
+aws logs describe-log-groups
+aws logs tail <log-group-name> --follow

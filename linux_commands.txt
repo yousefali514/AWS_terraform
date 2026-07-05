@@ -1,0 +1,54 @@
+Linux Commands
+==============
+
+pwd
+
+ls
+
+ls -la
+
+cd
+
+mkdir terraform-project
+
+rm -rf terraform-project
+
+cp file1 file2
+
+mv oldfile newfile
+
+touch main.tf
+
+cat main.tf
+
+nano main.tf
+
+vim variables.tf
+
+find . -name "*.tf"
+
+grep -r "aws_instance" .
+
+chmod +x deploy.sh
+
+systemctl status docker
+
+systemctl restart docker
+
+journalctl -u docker
+
+top
+
+htop
+
+df -h
+
+du -sh *
+
+curl ifconfig.me
+
+ping google.com
+
+ssh ubuntu@ec2-public-ip
+
+scp file.txt ubuntu@ec2-public-ip:/home/ubuntu

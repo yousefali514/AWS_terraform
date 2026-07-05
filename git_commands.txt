@@ -1,0 +1,50 @@
+Git Commands
+============
+
+git config --global user.name "Your Name"
+
+git config --global user.email "your@email.com"
+
+git init
+
+git clone https://github.com/yousef-ali54554/terraform-aws-cloud-infrastructure.git
+
+git status
+
+git add .
+
+git commit -m "Initial commit"
+
+git branch
+
+git checkout -b feature/vpc
+
+git switch main
+
+git merge feature/vpc
+
+git remote add origin https://github.com/yousef-ali54554/terraform-aws-cloud-infrastructure.git
+
+git remote -v
+
+git push -u origin main
+
+git push origin feature/vpc
+
+git pull origin main
+
+git fetch --all
+
+git log
+
+git log --oneline
+
+git diff
+
+git restore .
+
+git rm file.tf
+
+git tag v1.0.0
+
+git push origin v1.0.0

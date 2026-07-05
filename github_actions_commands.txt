@@ -1,0 +1,29 @@
+GitHub Actions Workflow
+=======================
+
+# Checkout Repository
+uses: actions/checkout@v4
+
+# Setup Terraform
+uses: hashicorp/setup-terraform@v3
+
+# Verify Terraform
+terraform version
+
+# Initialize
+terraform init
+
+# Format
+terraform fmt -check
+
+# Validate
+terraform validate
+
+# Plan
+terraform plan
+
+# Apply
+terraform apply -auto-approve
+
+# Destroy (optional)
+terraform destroy -auto-approve

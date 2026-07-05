@@ -1,0 +1,46 @@
+Docker Commands
+===============
+
+docker version
+
+docker info
+
+docker images
+
+docker ps
+
+docker ps -a
+
+docker build -t webapp .
+
+docker run -d -p 80:80 webapp
+
+docker stop <container-id>
+
+docker start <container-id>
+
+docker restart <container-id>
+
+docker rm <container-id>
+
+docker rmi webapp
+
+docker login
+
+docker logout
+
+docker tag webapp username/webapp:v1
+
+docker push username/webapp:v1
+
+docker pull username/webapp:v1
+
+docker logs <container-id>
+
+docker exec -it <container-id> bash
+
+docker network ls
+
+docker volume ls
+
+docker system prune -a
